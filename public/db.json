@@ -1,0 +1,59 @@
+{
+  "flights": [
+    {
+      "id":1,
+      "flightName": "ABC123",
+      "airline": "SouthWest",
+      "departureAirport": "AirportA",
+      "arrivalAirport": "AirportB",
+      "departureTime": "2023-11-27T12:00:00",
+      "arrivalTime": "2023-11-27T14:00:00",
+      "price": 500.00,
+      "seatAvailability": 50
+    },
+    {
+      "id":2,
+      "flightName": "DEF456",
+      "airline": "Delta",
+      "departureAirport": "AirportC",
+      "arrivalAirport": "AirportD",
+      "departureTime": "2023-11-28T10:30:00",
+      "arrivalTime": "2023-11-28T13:00:00",
+      "price": 200.00,
+      "seatAvailability": 150
+    },
+    {
+      "id":3,
+      "flightName": "GHI789",
+      "airline": "Avelo",
+      "departureAirport": "AirportE",
+      "arrivalAirport": "AirportF",
+      "departureTime": "2023-11-29T15:45:00",
+      "arrivalTime": "2023-11-29T18:30:00",
+      "price": 300.00,
+      "seatAvailability": 75
+    },
+    {
+      "id":4,
+      "flightName": "JKL321",
+      "airline": "American Airlines",
+      "departureAirport": "AirportG",
+      "arrivalAirport": "AirportH",
+      "departureTime": "2023-11-30T08:00:00",
+      "arrivalTime": "2023-11-30T10:30:00",
+      "price": 350.00,
+      "seatAvailability": 100
+    },
+    {
+    "id":5,
+    "flightName": "555321",
+    "airline": "American Airlines",
+    "departureAirport": "AirportG",
+    "arrivalAirport": "AirportH",
+    "departureTime": "2023-11-30T08:00:00",
+    "arrivalTime": "2023-11-30T10:30:00",
+    "price": 555.00,
+    "seatAvailability": 100
+    }
+  ]
+}

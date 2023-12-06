@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <style>
+     
+     :root{
+    --main-radius:5px;
+    --main-padding:5px;
+    --blue:#1e90ff;
+    --white:orange;
+    --yellowish:brown;
+    --morebluish:#52489c;
+
+}
+
+
+.container{
+
+    color: var(--white);
+    
+    display: grid;
+    height: 100vh;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 5%;
+    
+   grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "education education education"
+    "content1 content2 content3"
+    "footer footer footer ";
+}
+
+nav{
+    background:var(--morebluish);
+
+    grid-area: nav;
+}
+
+#education{
+    grid-area: education;
+    background-color: rgb(38, 255, 0);
+}
+main{
+    grid-area: main;
+    background-color: #0400f7;
+}
+#content1{
+    grid-area: content1;
+    background-color: rgb(30, 210, 168);
+}
+#content2{
+    grid-area: content2;
+    background-color: darkorange;
+}
+#content3{
+    grid-area: content3;
+    background-color: deeppink;
+}
+footer{
+    grid-area: footer;
+    background-color: brown;
+    text-align: center;
+    overflow: hidden;
+    color: black;
+}
+.navbar a{
+    float:right;
+    display: block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: aqua;
+    color: black;
+}
+.section{
+    display:flex;
+    align-items: center;
+}
+@media only screen and (max-width:500px){
+    .container{
+        grid-template-areas: 
+        "nav"
+        "main"
+        "education"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1fr 1fr 1fr 1fr;
+
+    }
+    
+
+
+}
+
+
+
+.image{
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:40px;
+    display:block;
+}
+
+        
+    </style>
+    <body>
+     <div class="container">
+        <nav> 
+            <div class="navbar">
+                <a href="#contact">Contact</a>
+                <a href="#education">Education</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+        
+        <main>  <img src="img.png" alt="image">
+            <div id="about" class="block" style="float : right">
+                <h2>About</h2>
+                <p> Hello, This is XXXXXX pursuing Masters in CS at UNH</p>
+            </div> </main>
+            <div id="education" class="section">
+                <img src="img.png" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim placeatucimus! Nesciunt quos explicabo dicta, animi quam dolorum architecto, est vitae sapiente, accusantium consequatur?</p>
+            </div>
+            <div id="content1">
+                <img src="image1.png" alt="my" class="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim placeat, provident sapiente dicta labore ratione ducimus!</p>
+            </div>
+            <div  id="content2">
+                <img src="image1.png" alt="my" class="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim placeat, provident sapiente dicta labore ratione ducimus!</p>
+            </div>
+            <div id="content3">
+                <img src="image1.png" alt="my" class="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim placeat, provident sapiente dicta labore ratione ducimus!</p>
+            </div>
+            <footer id="contact">
+                <p>Email:sai@gmail.com Contact:+1 2022333332 </p>
+            
+            </footer>
+    </div>
+    </body>
+</html>
+
